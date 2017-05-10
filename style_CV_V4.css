@@ -1,0 +1,90 @@
+@font-face 
+{ 
+    font-family: 'RobotoRegularwebfont';
+    src: url('font/Roboto-Regular-webfont.eot');
+    src: url('font/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Roboto-Regular-webfont.woff') format('woff'),
+         url('font/Regular-webfont.ttf') format('truetype'),
+         url('font/Roboto-Regular-webfont.svg#RobotoRegularwebfont') format('svg');
+}
+h1
+{
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(204,200,142);
+	border : 3px rgb(204,200,142) solid;
+	box-shadow: 6px 6px 6px black;
+}
+#bloc_page
+{
+	display: flex;
+    flex-direction: row;
+}
+
+.lisere
+{
+	width: 10%;
+	background: url("picture/lisere.jpg");
+}
+
+.bloc_CV
+{
+	width: 90%;
+	background: url("picture/image_fond.jpg");
+	color: white;
+	font-family: 'RobotoRegularwebfont', Arial, serif;
+}
+
+#conteneur_header
+{
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.titre
+{
+	width: 70%;
+}
+
+.photo_jordane_mini
+{
+	margin-top: 15%;
+}
+
+.intro
+{
+	font-weight: bold;
+	margin-right: 13%;
+}
+
+#conteneur_section
+{
+	height : 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+@media all and (max-width: 1024px)
+{
+	.lisere
+	{
+		display: none;
+	}
+	
+	h1
+{
+	font-size: 2em;
+}
+	
+	#conteneur_section
+	{
+		display: flex;
+		flex-direction: column;
+	}
+}
